@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="shell flex flex-wrap items-center justify-between gap-6 py-10 md:py-12">
       <div>
         <Wordmark />
-        <p className="mt-2 text-xs text-muted">Satu cerita. Satu langkah kecil.</p>
+        <p className="mt-2 text-xs text-muted">Latihan berbicara dan presentasi.</p>
       </div>
       <nav className="flex gap-5 text-sm text-muted" aria-label="Navigasi footer">
         <Link className="hover:text-teal" href="/#pertanyaan">

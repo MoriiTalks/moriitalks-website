@@ -7,28 +7,29 @@ export default function HomePage() {
   return (
     <main id="main-content">
       <section
-        className="shell grid items-center gap-8 pt-8 pb-14 md:min-h-[620px] md:grid-cols-2 md:py-16"
+        className="shell grid items-center gap-8 pt-8 pb-14 md:min-h-155 md:grid-cols-2 md:py-16"
         aria-labelledby="hero-title"
       >
         <div>
-          <p className="mb-6 eyebrow">Teman latihan bercerita</p>
+          <p className="mb-6 eyebrow">Teman latihan berbicara</p>
           <h1
             id="hero-title"
             className="text-[clamp(3.25rem,7vw,5.5rem)] leading-[1.03] font-bold tracking-[-0.055em]"
           >
-            Suara kecil.
+            Latihan
             <br />
-            <span className="text-teal">Cerita besar.</span>
+            <span className="text-teal">presentasi.</span>
           </h1>
           <p className="mt-7 max-w-md text-lg leading-relaxed text-muted">
-            Ada banyak cerita di kepalamu. Yuk, belajar membagikannya bersama Morii.
+            Belajar menyampaikan ide, memberi alasan, dan menjawab pertanyaan lewat praktik
+            berbicara.
           </p>
           <div className="mt-8">
             <ActionLink href="#latihan">Kenali cara berlatih</ActionLink>
           </div>
-          <p className="mt-6 text-xs text-muted">Bahasa Indonesia & English</p>
+          <p className="mt-6 text-xs text-muted">Bahasa Indonesia dan Inggris</p>
         </div>
-        <div className="relative mx-auto grid w-full max-w-[500px] place-items-center pt-9">
+        <div className="relative mx-auto grid w-full max-w-125 place-items-center pt-9">
           <div
             className="absolute inset-x-3 top-10 bottom-8 -rotate-6 rounded-[45%] bg-mint"
             aria-hidden="true"
@@ -46,13 +47,13 @@ export default function HomePage() {
             preload
           />
           <p className="relative mt-2 text-center text-xs text-muted">
-            Satu cerita dulu. Pelan-pelan juga boleh.
+            Mulai dari satu kalimat. Ulangi jika perlu.
           </p>
         </div>
       </section>
 
       <div className="bg-peach px-5 py-6 text-center text-base md:text-lg">
-        Berani bicara dimulai dari <strong className="font-semibold">ruang untuk mencoba.</strong>
+        Pelajari contoh, lalu <strong className="font-semibold">praktikkan dengan suara.</strong>
       </div>
 
       <section
@@ -60,7 +61,7 @@ export default function HomePage() {
         id="morii"
         aria-labelledby="meet-title"
       >
-        <div className="mx-auto w-full max-w-[360px] rounded-t-full rounded-b-3xl bg-sage px-5 py-8">
+        <div className="mx-auto w-full max-w-90 rounded-t-full rounded-b-3xl bg-sage px-5 py-8">
           <Image
             className="w-full"
             src="/images/morii-listen.png"
@@ -71,19 +72,19 @@ export default function HomePage() {
           />
         </div>
         <div>
-          <p className="mb-5 eyebrow">Kenali teman barumu</p>
+          <p className="mb-5 eyebrow">Kenali Morii</p>
           <h2 id="meet-title" className="section-title">
-            Cerita sehari-hari.
+            Belajar menjelaskan.
             <br />
-            Latihan yang berarti.
+            Berlatih presentasi.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted">
-            Hobi, ide untuk tugas sekolah, atau hal menarik hari ini. Latihan dimulai dari hal yang
-            dekat dengan dunia anak.
+            Menjelaskan aturan permainan, menyampaikan pendapat, atau memperkenalkan topik tugas
+            sekolah. Latihan menggunakan situasi yang dikenal anak.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            MoriiTalks mengembangkan latihan bertahap dan percakapan dengan Morii AI, dengan satu
-            tujuan dan satu saran yang mudah dicoba.
+            Mulai dari menjelaskan ide, menyusun penjelasan, menyesuaikan penjelasan untuk
+            pendengar, hingga presentasi singkat.
           </p>
           <p className="mt-6 inline-block rounded-full border border-line px-4 py-2 text-xs text-teal">
             Sedang dikembangkan
@@ -93,11 +94,11 @@ export default function HomePage() {
 
       <section className="shell py-16 md:py-24" id="latihan" aria-labelledby="practice-title">
         <div className="border-t border-line pt-12">
-          <p className="mb-5 eyebrow">Langkah kecil, cerita demi cerita</p>
+          <p className="mb-5 eyebrow">Latihan bertahap</p>
           <h2 id="practice-title" className="section-title">
-            Mulai dari satu ide.
+            4 tahap.
             <br />
-            Tambahkan satu alasan.
+            16 pelajaran.
           </h2>
           <ol className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
             {practiceSteps.map((step) => (
@@ -116,10 +117,12 @@ export default function HomePage() {
           <div className="mt-10 rounded-3xl bg-mint p-6 md:p-9">
             <p className="eyebrow">Contoh latihan pertama</p>
             <p className="mt-3 text-xl leading-relaxed tracking-tight md:text-2xl">
-              “Aku suka menggambar <strong className="text-teal">karena</strong> bisa membuat tokoh
-              dari imajinasiku.”
+              “Saya akan menjelaskan <strong className="text-teal">cara merawat tanaman</strong> di
+              kelas.”
             </p>
-            <p className="mt-3 text-xs text-muted">Satu topik. Satu alasan. Ceritamu sendiri.</p>
+            <p className="mt-3 text-xs text-muted">
+              Sebutkan topiknya agar pendengar tahu apa yang akan dijelaskan.
+            </p>
           </div>
         </div>
       </section>
@@ -127,25 +130,26 @@ export default function HomePage() {
       <section className="shell" id="orang-tua" aria-labelledby="parent-title">
         <div className="grid gap-8 rounded-3xl bg-forest p-7 text-cream md:grid-cols-2 md:gap-12 md:p-12">
           <div>
-            <p className="mb-5 eyebrow text-mint">Untuk orang tua & pendamping</p>
+            <p className="mb-5 eyebrow text-mint">Untuk orang tua dan pendamping</p>
             <h2 id="parent-title" className="section-title">
-              Temani prosesnya.
+              Dampingi latihan.
               <br />
-              Rayakan usahanya.
+              Coba bersama.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-mint">
-              Morii adalah teman latihan. Orang tua, guru, dan teman membantu anak memakai
-              keterampilannya dalam percakapan sehari-hari.
+              Morii adalah teman latihan. Orang tua dan guru tetap membantu anak menggunakan
+              keterampilannya saat presentasi dan percakapan sehari-hari.
             </p>
           </div>
           <div className="self-center border-t border-mint/30 pt-7 md:border-t-0 md:border-l md:pt-0 md:pl-10">
-            <h3 className="text-2xl font-bold tracking-tight">Ada ruang untuk jeda.</h3>
+            <h3 className="text-2xl font-bold tracking-tight">Catatan latihan, bukan nilai.</h3>
             <p className="mt-4 text-base leading-relaxed text-mint">
-              Latihan yang fokus, panduan sederhana, dan kesempatan untuk berhenti lalu mencoba
-              lagi.
+              Catatan mingguan menunjukkan hari latihan. Untuk melihat kemampuan anak, dengarkan
+              penjelasannya dan ajak mencoba topik lain.
             </p>
             <p className="mt-5 text-xs leading-relaxed text-mint">
-              Versi awal berisi latihan mandiri dan demo tertulis. Fitur suara AI belum aktif.
+              Latihan mandiri tersedia secara offline dalam versi pengembangan. Percakapan suara AI
+              belum tersedia untuk umum.
             </p>
           </div>
         </div>
@@ -182,11 +186,11 @@ export default function HomePage() {
 
       <section className="shell" aria-labelledby="closing-title">
         <div className="rounded-3xl bg-mint px-6 py-14 text-center">
-          <p className="mb-5 eyebrow">Untuk cerita yang belum terucap</p>
+          <p className="mb-5 eyebrow">MoriiTalks untuk Android dan iOS</p>
           <h2 id="closing-title" className="section-title">
-            Sampai jumpa
+            Kenali latihan
             <br />
-            di cerita pertamamu.
+            bersama Morii.
           </h2>
           <div className="mt-8">
             <ActionLink href="/download">Lihat status aplikasi</ActionLink>

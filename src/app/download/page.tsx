@@ -19,14 +19,15 @@ export default function DownloadPage() {
         height={260}
         sizes="224px"
       />
-      <p className="mb-5 eyebrow">Satu langkah menuju cerita pertama</p>
+      <p className="mb-5 eyebrow">Status aplikasi</p>
       <h1 className="text-[clamp(2.5rem,5vw,4rem)] leading-tight font-bold tracking-[-0.04em]">
-        Morii sedang
+        MoriiTalks sedang
         <br />
-        <span className="text-teal">bersiap menyapamu.</span>
+        <span className="text-teal">dikembangkan.</span>
       </h1>
       <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted">
-        Tautan unduhan resmi akan hadir di sini setelah MoriiTalks tersedia di store.
+        MoriiTalks belum tersedia untuk diunduh. Tautan resmi App Store dan Google Play akan
+        ditambahkan setelah aplikasi dirilis.
       </p>
       <dl
         className="mx-auto my-8 grid max-w-lg gap-4 text-left sm:grid-cols-2"
@@ -40,7 +41,7 @@ export default function DownloadPage() {
         ))}
       </dl>
       <p className="mb-7 text-xs text-muted">Belum ada tanggal rilis yang diumumkan.</p>
-      <ActionLink href="/">Kenali Morii dulu</ActionLink>
+      <ActionLink href="/">Kenali cara berlatih</ActionLink>
     </main>
   );
 }

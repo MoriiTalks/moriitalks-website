@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function Wordmark() {
   return (
     <Link
-      className="text-[26px] font-extrabold tracking-[-0.05em] no-underline md:text-[29px]"
+      className="text-[26px] font-extrabold tracking-tighter no-underline md:text-[29px]"
       href="/"
       aria-label="MoriiTalks, beranda"
     >

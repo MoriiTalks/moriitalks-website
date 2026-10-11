@@ -1,26 +1,25 @@
 export const site = {
   name: 'MoriiTalks',
-  title: 'MoriiTalks — Suara kecil, cerita besar',
+  title: 'MoriiTalks — Latihan presentasi bersama Morii',
   description:
-    'Kenali Morii, teman latihan bercerita dan public speaking. MoriiTalks sedang dikembangkan untuk Android dan iOS, dalam Bahasa Indonesia dan Inggris.',
+    'Latihan berbicara dan presentasi bersama Morii. MoriiTalks sedang dikembangkan untuk Android dan iOS, dalam bahasa Indonesia dan Inggris.',
 } as const;
 
 export const practiceSteps = [
   {
     number: '01',
-    title: 'Lihat satu contoh.',
-    description:
-      'Ide kecil terasa lebih mudah ketika ada contoh. Mulai dari sesuatu yang kamu suka.',
+    title: 'Pelajari contohnya.',
+    description: 'Kenali tujuan latihan, lalu lihat contoh kalimat yang bisa digunakan.',
   },
   {
     number: '02',
-    title: 'Ceritakan versimu.',
-    description: 'Satu topik, satu alasan. Beri ruang untuk mencoba dengan kata-katamu sendiri.',
+    title: 'Praktikkan dengan suara.',
+    description: 'Berlatih dalam dua situasi berbeda dengan kata-katamu sendiri.',
   },
   {
     number: '03',
-    title: 'Coba sekali lagi.',
-    description: 'Ambil satu saran yang bisa dilakukan, lalu bawa latihanmu ke cerita berikutnya.',
+    title: 'Periksa dan ulangi.',
+    description: 'Periksa apakah tujuan latihan sudah tercapai. Gunakan petunjuk jika perlu.',
   },
 ] as const;
 
@@ -33,16 +32,16 @@ export const questions = [
   {
     question: 'Apa yang sudah ada di versi awal?',
     answer:
-      'Fondasi aplikasi memuat Morii, satu latihan mandiri, demo obrolan tertulis, dan pilihan bahasa. Percakapan suara AI dan feedback otomatis belum aktif.',
+      'Versi pengembangan menyediakan 4 tahap dengan 16 pelajaran. Setiap pelajaran memiliki dua konteks praktik berbicara. Jalur latihan, catatan mingguan, dan jumlah hari latihan berturut-turut tersimpan di perangkat.',
   },
   {
-    question: 'Apakah Morii menggantikan guru atau pendamping?',
+    question: 'Apakah sudah bisa berbicara langsung dengan Morii?',
     answer:
-      'Morii dirancang sebagai teman latihan. Guru dan orang tua tetap berperan membantu anak memahami latihan dan mencoba keterampilannya di kehidupan sehari-hari.',
+      'Percakapan suara AI masih diuji secara privat dan belum tersedia untuk umum. Dalam latihan mandiri saat ini, suara belum direkam atau dinilai AI. Catatan penyelesaian menunjukkan latihan yang sudah dilakukan, bukan nilai kemampuan.',
   },
   {
-    question: 'Bahasa apa saja yang direncanakan?',
+    question: 'Bahasa apa saja yang tersedia?',
     answer:
-      'Bahasa Indonesia dan Inggris. Fondasi aplikasi sudah menyediakan tampilan dan latihan contoh dalam kedua bahasa.',
+      'Bahasa Indonesia dan Inggris tersedia dalam versi pengembangan. Penyelesaian pelajaran dicatat terpisah untuk setiap bahasa, sedangkan hari latihan dihitung bersama.',
   },
 ] as const;
